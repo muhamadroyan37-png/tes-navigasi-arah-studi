@@ -1,0 +1,123 @@
+.result {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 8px 24px 64px;
+}
+
+.status { text-align: center; padding: 48px 0; color: var(--ink-soft); }
+.status p { margin: 0 0 20px; }
+[hidden] { display: none !important; }
+
+#result { display: grid; gap: 20px; }
+
+.card-label { margin: 0 0 12px; font-size: 0.9rem; font-weight: 700; }
+
+/* ===== Kategori utama: elemen paling menonjol ===== */
+.primary-card {
+  padding: 32px 24px;
+  background: var(--teal);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.primary-card .card-label { opacity: 0.85; }
+
+.primary-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 24px;
+}
+
+.primary-name {
+  margin: 0;
+  font-size: clamp(2.1rem, 9vw, 3.4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.primary-percent {
+  margin: 0;
+  font-size: clamp(2.1rem, 9vw, 3.4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  color: var(--amber);
+}
+
+.primary-desc { margin: 16px 0 0; max-width: 48ch; font-size: 1.05rem; }
+
+.majors-title { margin: 24px 0 8px; font-size: 0.9rem; font-weight: 700; opacity: 0.85; }
+
+.pills { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.pills li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ===== Kategori kedua ===== */
+.secondary-card {
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--amber);
+  border-radius: var(--radius);
+}
+
+.secondary-card .card-label { color: var(--ink-soft); margin-bottom: 4px; }
+
+.secondary-main { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
+.secondary-name { margin: 0; font-size: 1.5rem; font-weight: 800; }
+.secondary-percent { margin: 0; font-size: 1.5rem; font-weight: 800; color: var(--teal); }
+.secondary-desc { margin: 8px 0 0; color: var(--ink-soft); }
+
+/* ===== Panel umum ===== */
+.panel {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.panel h2 { margin: 0 0 16px; font-size: 1.2rem; font-weight: 800; }
+
+.traits-layout { display: grid; gap: 24px; align-items: center; }
+
+/* ===== Radar chart ===== */
+.radar svg { display: block; width: 100%; max-width: 440px; margin: 0 auto; }
+.radar-ring { fill: none; stroke: var(--line); stroke-width: 1; }
+.radar-axis { stroke: var(--line); stroke-width: 1; }
+.radar-area { 
+  fill: rgba(0, 99, 176, 0.18); 
+  stroke: var(--teal); 
+  stroke-width: 2.5; 
+  stroke-linejoin: round; 
+}
+.radar-dot { fill: var(--teal); stroke: #fff; stroke-width: 2; }
+.radar-label { fill: var(--ink); font-size: 13px; }
+.radar-name { font-weight: 700; }
+.radar-value { fill: var(--ink-soft); font-weight: 500; }
+
+/* ===== Batang persentase ===== */
+.bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.bar-head { display: flex; justify-content: space-between; margin-bottom: 6px; font-weight: 500; }
+.bar-value { font-weight: 800; }
+.bar-track { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--teal); border-radius: 999px; }
+
+/* ===== Trait terkuat ===== */
+.top-traits { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.top-trait-title { margin: 0; font-weight: 800; }
+.top-trait-desc { margin: 2px 0 0; color: var(--ink-soft); }
+
+.retake { text-align: center; padding-top: 12px; }
+
+@media (min-width: 720px) {
+  .primary-card { padding: 40px; }
+  .secondary-card, .panel { padding: 28px; }
+  .traits-layout { grid-template-columns: 1.4fr 1fr; }
+  .top-traits { grid-template-columns: repeat(3, 1fr); }
+}

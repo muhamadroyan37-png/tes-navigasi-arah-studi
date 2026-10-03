@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tes - Navigasi Studi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Navigasi Studi</a>
+  </header>
+
+  <main class="test">
+    <p id="status" class="status" role="status">Memuat pertanyaan...</p>
+
+    <section id="test-area" hidden>
+      <div class="progress-info">
+        <span id="counter"></span>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Kemajuan tes" aria-valuemin="0" aria-valuemax="100">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <form id="question-form" class="card" onsubmit="return false">
+        <fieldset>
+          <legend id="question-text" tabindex="-1"></legend>
+          <div id="answers" class="answers"></div>
+        </fieldset>
+      </form>
+
+      <div class="nav-buttons">
+        <button id="prev-btn" class="btn btn-secondary" type="button">Sebelumnya</button>
+        <button id="next-btn" class="btn btn-primary" type="button" disabled>Selanjutnya</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/sound-manager.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>

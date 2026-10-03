@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hukum_ekonomi_syariah",
+    "name": "Hukum Ekonomi Syariah",
+    "description": "Kamu tampaknya selalu bertanya 'adil nggak sih ini?' setiap melihat sebuah kesepakatan. Karaktermu berubah menjadi konsultan hukum syariah yang duduk di ruang rapat bank syariah, membaca akad baris demi baris sambil memastikan tidak ada gharar atau riba yang terselip. Karakter berubah menjadi hakim, advokat, atau konsultan ekonomi syariah.",
+    "majors": [
+      "Hukum Ekonomi Syariah",
+      "Perbankan Syariah",
+      "Ekonomi Syariah",
+      "Akuntansi Syariah"
+    ],
+    "trait_weights": {
+      "economic": 0.45,
+      "analytical": 0.35,
+      "social": 0.2
+    }
+  },
+  {
+    "id": "pendidikan_agama_islam",
+    "name": "Pendidikan Agama Islam",
+    "description": "Kamu tampaknya adalah orang yang paling sabar saat temanmu bertanya hal yang sama untuk ketiga kalinya. Karaktermu berubah menjadi guru yang dikenang murid bertahun-tahun kemudian, bukan karena nilainya, tetapi karena caranya mengajar dengan hati. Karakter berubah menjadi guru yang dikelilingi murid-muridnya.",
+    "majors": [
+      "Pendidikan Agama Islam",
+      "Pendidikan Guru Madrasah Ibtidaiyah",
+      "Manajemen Pendidikan Islam",
+      "Bimbingan dan Konseling Islam"
+    ],
+    "trait_weights": {
+      "teaching": 0.4,
+      "social": 0.35,
+      "spiritual": 0.25
+    }
+  },
+  {
+    "id": "ilmu_alquran_tafsir",
+    "name": "Ilmu Al-Qur'an dan Tafsir",
+    "description": "Kamu tampaknya tidak puas dengan permukaan, dan selalu ingin tahu makna di balik sebuah kata. Karaktermu berubah menjadi mufasir yang duduk di antara tumpukan kitab, menelusuri satu ayat dari berbagai sudut pandang ulama. Karakter berubah menjadi mufasir yang duduk di antara tumpukan kitab.",
+    "majors": [
+      "Ilmu Al-Qur'an dan Tafsir",
+      "Ilmu Hadis",
+      "Bahasa dan Sastra Arab",
+      "Pendidikan Bahasa Arab"
+    ],
+    "trait_weights": {
+      "language": 0.4,
+      "spiritual": 0.35,
+      "analytical": 0.25
+    }
+  }
+]

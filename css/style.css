@@ -1,0 +1,126 @@
+/* ===== Design tokens (Palet Baru) ===== */
+:root {
+  --bg: #ffffff;             /* Background putih bersih */
+  --surface: #ffffff;        /* Warna permukaan kartu */
+  --ink: #2b547e;            /* Teks judul & teks utama */
+  --ink-soft: #5b7999;       /* Teks deskripsi / sekunder */
+  --line: #d8e5f2;           /* Garis pemisah & border */
+  --teal: #0063b0;           /* Warna utama (Primary Blue) */
+  --teal-dark: #1f63b0;      /* Warna hover tombol */
+  --amber: #fdb41e;          /* Warna aksen kuning/emas */
+  --light-blue: #a7cae5;     /* Biru muda lembut */
+  --radius: 14px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.site-header {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ===== Tombol (dipakai semua halaman) ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.btn-primary { background: var(--teal); color: #fff; }
+.btn-primary:hover { background: var(--teal-dark); }
+
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-secondary:hover { border-color: var(--ink-soft); }
+
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+/* ===== Landing page ===== */
+.hero {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin: 0 0 16px;
+  font-size: clamp(1.9rem, 6vw, 3rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0 0 28px;
+  max-width: 46ch;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.note {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.hero-visual svg {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+/* Diagram kompas */
+.compass-lines line { stroke: var(--line); stroke-width: 2; }
+.compass-nodes circle { fill: var(--surface); stroke: var(--teal); stroke-width: 3; }
+.compass-labels text { fill: var(--ink); font-size: 14px; font-weight: 700; }
+.compass-ring { fill: none; stroke: var(--amber); stroke-width: 3; }
+.compass-core { fill: var(--teal); }
+.compass-you { fill: #fff; font-size: 14px; font-weight: 800; }
+
+@media (min-width: 820px) {
+  .hero {
+    grid-template-columns: 1.1fr 1fr;
+    padding-top: 56px;
+  }
+}

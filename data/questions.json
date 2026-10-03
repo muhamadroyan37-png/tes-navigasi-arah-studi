@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "question": "Kegiatan belajar yang paling kamu sukai?",
+    "answers": [
+      { "id": "a", "text": "Mengkaji", "image": "assets/image/q2a.png", "scores": { "language": 4, "spiritual": 2 } },
+      { "id": "b", "text": "Praktik mengajar", "image": "assets/image/q2b.png", "scores": { "teaching": 4, "social": 2 } },
+      { "id": "c", "text": "Membaca dan menghafal", "image": "assets/image/q2c.png", "scores": { "analytical": 4, "economic": 2 } }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Orang yang seperti apa kamu?",
+    "answers": [
+      { "id": "a", "text": "Ekstrovert mampuss dan suka ngoceh", "image": "assets/image/q3a.png", "scores": { "analytical": 4, "economic": 2 } },
+      { "id": "b", "text": "Introvert dewe lurrr", "image": "assets/image/q3b.png", "scores": { "language": 4, "spiritual": 2 } },
+      { "id": "c", "text": "Ambivert fleksibel bisa ekstro bisa intro tergantung kondisi", "image": "assets/image/q3c.png", "scores": { "social": 4, "teaching": 2 } }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Di kelas, kamu paling betah...",
+    "answers": [
+      { "id": "a", "text": "Membaca dan membuat catatan", "image": "assets/image/q4a.png", "scores": { "language": 2, "spiritual": 1 } },
+      { "id": "b", "text": "Berdebat dan analisis kasus", "image": "assets/image/q4b.png", "scores": { "analytical": 2, "economic": 1 } },
+      { "id": "c", "text": "Presentasi dan diskusi", "image": "assets/image/q4c.png", "scores": { "teaching": 2, "social": 1 } }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Waktu luang, kamu suka...",
+    "answers": [
+      { "id": "a", "text": "Membuat konten edukatif", "image": "assets/image/q5a.png", "scores": { "teaching": 2, "social": 1 } },
+      { "id": "b", "text": "Membaca buku atau kitab", "image": "assets/image/q5b.png", "scores": { "language": 2, "spiritual": 1 } },
+      { "id": "c", "text": "Mengikuti berita bisnis atau hukum", "image": "assets/image/q5c.png", "scores": { "economic": 2, "analytical": 1 } }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Kalau ada yang bertanya, kamu suka menjawab dengan...",
+    "answers": [
+      { "id": "a", "text": "Dasar hukum dan aturannya", "image": "assets/image/q6a.png", "scores": { "analytical": 2, "economic": 1 } },
+      { "id": "b", "text": "Penjelasan sederhana supaya mudah dipahami", "image": "assets/image/q6b.png", "scores": { "teaching": 2, "social": 1 } },
+      { "id": "c", "text": "Dalil dan penafsiran ayatnya", "image": "assets/image/q6c.png", "scores": { "language": 2, "spiritual": 1 } }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Teman tidak bayar utang berbulan-bulan, kamu...",
+    "answers": [
+      { "id": "a", "text": "Bacakan ayat tentang utang piutang", "image": "assets/image/q7a.png", "scores": { "language": 2, "spiritual": 1 } },
+      { "id": "b", "text": "Siapkan surat gugatan", "image": "assets/image/q7b.png", "scores": { "economic": 2, "analytical": 1 } },
+      { "id": "c", "text": "Nasihati pelan-pelan sambil kasih motivasi", "image": "assets/image/q7c.png", "scores": { "social": 2, "teaching": 1 } }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Murid atau adik mengantuk saat kamu jelaskan, kamu...",
+    "answers": [
+      { "id": "a", "text": "Bilang \"ini ada konsekuensi hukumnya lho\"", "image": "assets/image/q8a.png", "scores": { "analytical": 2, "economic": 1 } },
+      { "id": "b", "text": "Bikin kuis dadakan atau bernyanyi", "image": "assets/image/q8b.png", "scores": { "teaching": 2, "social": 1 } },
+      { "id": "c", "text": "Lanjut menjelaskan dengan penuh semangat", "image": "assets/image/q8c.png", "scores": { "spiritual": 2, "language": 1 } }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Lihat tulisan Arab tanpa harakat, kamu...",
+    "answers": [
+      { "id": "a", "text": "Minta bantuan teman yang lebih jago", "image": "assets/image/q9a.png", "scores": { "social": 2, "teaching": 1 } },
+      { "id": "b", "text": "Cari terjemahannya dulu", "image": "assets/image/q9b.png", "scores": { "analytical": 2, "economic": 1 } },
+      { "id": "c", "text": "Tenang, Iq dan ketenangan lalu tertantang", "image": "assets/image/q9c.png", "scores": { "language": 2, "spiritual": 1 } }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Kamu ingin dikenang karena...",
+    "answers": [
+      { "id": "a", "text": "Kesabaran dan keteladanannya", "image": "assets/image/q10a.png", "scores": { "teaching": 2, "social": 1 } },
+      { "id": "b", "text": "Kedalaman ilmunya", "image": "assets/image/q10b.png", "scores": { "language": 2, "spiritual": 1 } },
+      { "id": "c", "text": "Ketegasan dan keadilannya", "image": "assets/image/q10c.png", "scores": { "economic": 2, "analytical": 1 } }
+    ]
+  }
+]

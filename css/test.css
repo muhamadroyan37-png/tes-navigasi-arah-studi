@@ -1,0 +1,189 @@
+.test {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 24px 64px;
+}
+
+.status {
+  color: var(--ink-soft);
+  text-align: center;
+  padding: 48px 0;
+}
+
+/* Progress */
+.progress-info {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.progress {
+  height: 8px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--teal);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+/* Kartu pertanyaan */
+.card {
+  margin-top: 24px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+legend:focus { outline: none; }
+
+/* Pilihan jawaban */
+.answers {
+  display: grid;
+  gap: 12px;
+}
+
+.option {
+  display: block;
+  cursor: pointer;
+}
+
+/* Radio asli disembunyikan secara visual, tetap bisa difokus keyboard */
+.option input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.option-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding: 14px 16px 14px 48px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+/* Lingkaran radio buatan */
+.option-box::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  border: 2px solid var(--ink-soft);
+  border-radius: 50%;
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+/* Gambar pada pilihan jawaban */
+.option-img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+}
+
+.option-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.option:hover .option-box {
+  border-color: var(--ink-soft);
+}
+
+.option input:checked + .option-box {
+  border-color: var(--teal);
+  background: #edf5fb;
+  font-weight: 700;
+}
+
+.option input:checked + .option-box::before {
+  border-color: var(--teal);
+  background: radial-gradient(circle, var(--teal) 45%, var(--surface) 50%);
+}
+
+.option input:focus-visible + .option-box {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* Lingkaran radio buatan */
+.option-text::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  border: 2px solid var(--ink-soft);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.option:hover .option-text { border-color: var(--ink-soft); }
+
+.option input:checked + .option-text {
+  border-color: var(--teal);
+  background: #e6f3f4;
+  font-weight: 700;
+}
+
+.option input:checked + .option-text::before {
+  border-color: var(--teal);
+  background: radial-gradient(circle, var(--teal) 45%, var(--surface) 50%);
+}
+
+.option input:focus-visible + .option-text {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* Tombol navigasi */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.nav-buttons .btn { flex: 1; padding-left: 16px; padding-right: 16px; }
+
+@media (min-width: 600px) {
+  .nav-buttons .btn { flex: 0 0 auto; min-width: 160px; }
+  .card { padding: 32px; }
+}

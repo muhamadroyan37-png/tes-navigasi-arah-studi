@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasil - Navigasi Studi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Navigasi Studi</a>
+  </header>
+
+  <main class="result">
+    <div id="status" class="status" role="status">
+      <p id="status-text">Menghitung hasil...</p>
+      <a id="start-link" class="btn btn-primary" href="test.html" hidden>Mulai Tes</a>
+    </div>
+
+    <div id="result" hidden>
+      <section class="primary-card" aria-labelledby="primary-name">
+        <p class="card-label">Arah studi utamamu</p>
+        <div class="primary-main">
+          <h1 id="primary-name" class="primary-name"></h1>
+          <p id="primary-percent" class="primary-percent"></p>
+        </div>
+        <p id="primary-desc" class="primary-desc"></p>
+        <div id="primary-majors-wrap">
+          <p class="majors-title">Contoh jurusan</p>
+          <ul id="primary-majors" class="pills"></ul>
+        </div>
+      </section>
+
+      <section class="secondary-card" aria-labelledby="secondary-name">
+        <p class="card-label">Arah studi kedua</p>
+        <div class="secondary-main">
+          <h2 id="secondary-name" class="secondary-name"></h2>
+          <p id="secondary-percent" class="secondary-percent"></p>
+        </div>
+        <p id="secondary-desc" class="secondary-desc"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="traits-title">
+        <h2 id="traits-title">Profil trait</h2>
+        <div class="traits-layout">
+          <div id="radar" class="radar"></div>
+          <ul id="trait-list" class="bars"></ul>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="top-title">
+        <h2 id="top-title">Trait terkuatmu</h2>
+        <ul id="top-traits" class="top-traits"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="other-title">
+        <h2 id="other-title">Skor kategori lainnya</h2>
+        <ul id="other-categories" class="bars"></ul>
+      </section>
+
+      <div class="retake">
+        <button id="retake-btn" class="btn btn-secondary" type="button">Ulangi Tes</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/sound-manager.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/radar-chart.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>

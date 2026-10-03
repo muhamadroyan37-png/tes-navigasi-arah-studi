@@ -1,0 +1,38 @@
+[
+  {
+    "id": "analytical",
+    "name": "Analitis",
+    "description": "Berpikir logis, runtut, dan teliti dalam menalar suatu persoalan.",
+    "max_score": 21
+  },
+  {
+    "id": "economic",
+    "name": "Ekonomi",
+    "description": "Ketertarikan pada ekonomi, keuangan, dan transaksi.",
+    "max_score": 18
+  },
+  {
+    "id": "teaching",
+    "name": "Mengajar",
+    "description": "Minat membimbing, mengajar, dan menjelaskan kepada orang lain.",
+    "max_score": 22
+  },
+  {
+    "id": "social",
+    "name": "Sosial",
+    "description": "Empati dan kemampuan berinteraksi dengan banyak orang.",
+    "max_score": 17
+  },
+  {
+    "id": "language",
+    "name": "Bahasa",
+    "description": "Ketertarikan pada bahasa Arab dan menelaah teks.",
+    "max_score": 25
+  },
+  {
+    "id": "spiritual",
+    "name": "Spiritual",
+    "description": "Kedalaman penghayatan dan minat pada nilai-nilai keagamaan.",
+    "max_score": 14
+  }
+]

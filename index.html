@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigasi Studi - Temukan arah kuliahmu</title>
+  <meta name="description" content="Tes singkat untuk siswa SMA yang membantu menemukan arah studi kuliah yang cocok.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/image/logo.jpeg" alt="Logo NARASI" class="brand-logo">
+      <span>Navigasi Studi</span>
+    </a>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Kuliah di bidang apa yang paling cocok untukmu?</h1>
+      <p class="lead">
+        Jawab 10 pertanyaan singkat tentang caramu belajar, bekerja, dan berpikir.
+        Kamu akan mendapat gambaran arah studi yang sesuai dengan kecenderunganmu.
+      </p>
+      <a class="btn btn-primary" href="test.html">Mulai Tes</a>
+      <p class="note">Sekitar 5 menit. Tanpa daftar akun.</p>
+    </div>
+
+    <div class="hero-visual">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Diagram kompas dengan tiga arah studi: Hukum Ekonomi Syariah, Pendidikan Agama Islam, dan Ilmu Al-Qur&#39;an dan Tafsir">
+        <g class="compass-lines">
+          <line x1="200" y1="180" x2="200" y2="60"/>
+          <line x1="200" y1="180" x2="304" y2="240"/>
+          <line x1="200" y1="180" x2="96" y2="240"/>
+        </g>
+        <g class="compass-nodes">
+          <circle cx="200" cy="60" r="14"/>
+          <circle cx="304" cy="240" r="14"/>
+          <circle cx="96" cy="240" r="14"/>
+        </g>
+        <g class="compass-labels">
+          <text x="200" y="36" text-anchor="middle">Hukum Ekonomi Syariah</text>
+          <text x="304" y="278" text-anchor="middle">Pendidikan Agama Islam</text>
+          <text x="96" y="278" text-anchor="middle">Al-Qur&#39;an &amp; Tafsir</text>
+        </g>
+        <circle class="compass-ring" cx="200" cy="180" r="38"/>
+        <circle class="compass-core" cx="200" cy="180" r="30"/>
+        <text class="compass-you" x="200" y="185" text-anchor="middle">Kamu</text>
+      </svg>
+    </div>
+  </main>
+  <script src="js/sound-manager.js"></script>
+  <script>
+    // Memutar backsound saat halaman dibuka / saat interaksi pertama
+    document.addEventListener("DOMContentLoaded", () => {
+      SoundManager.playBGM();
+    });
+  </script>
+</body>
+</html>
